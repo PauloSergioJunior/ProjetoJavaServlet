@@ -14,7 +14,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * @author carlos
+ * @author Paulo
  *
  */
 @Getter
@@ -26,13 +26,34 @@ public class Empresa {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	//private Long id;
 
-	private String nome;
+	//private String nome;
 	
-	private String email;
+	private String email = "paulo@gmail.com";
 	
-	private String cnpj;
+	private String senha = "123";
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	
-	private String descricao;
+	//private String cnpj;
+	
+	//private String descricao;
+	
+	
+	
 }

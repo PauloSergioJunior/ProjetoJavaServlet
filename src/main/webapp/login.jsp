@@ -37,7 +37,12 @@
   </head>
   
   <body class="text-center">
-    <form class="form-signin" action="${pageContext.request.contextPath}/Login" method="post">
+  
+  <%
+  			request.getSession().setAttribute("login","paulo@gmail.com" );
+  	%>
+  
+    <form class="form-signin" action="${pageContext.request.contextPath}/LoginAutentic" method="post">
 		  <h1 class="h3 mb-3 font-weight-normal">Login</h1>
 		  <label for="email" class="sr-only">Email</label>
 		  <input type="email" id="email" name="email" class="form-control" placeholder="login" required autofocus>

@@ -31,7 +31,7 @@
 					
 					<div class="dropdown-menu dropdown-menu-right"
 						aria-labelledby="dd_user">
-						<a href="${pageContext.request.contextPath}/login.jsp" class="dropdown-item">Sair</a>
+						<a href="${pageContext.request.contextPath}/sairServlet" class="dropdown-item">Sair</a>
 					</div>
 				</li>
 			</ul>
